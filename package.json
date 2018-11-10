@@ -4,6 +4,7 @@
   "description": "boilerplate for building a graphql api on serverless",
   "main": "index.js",
   "scripts": {
+    "start": "serverless offline",
     "test": "jest"
   },
   "keywords": [
