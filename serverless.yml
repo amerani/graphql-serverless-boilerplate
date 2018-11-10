@@ -1,0 +1,17 @@
+service: apollo-lambda
+provider:
+  name: aws
+  runtime: nodejs8.10
+plugins:
+  - serverless-offline  
+functions:
+  graphql:
+    handler: src/graphql.graphqlHandler
+    events:
+    - http:
+        path: graphql
+        method: post
+        cors: true
+    - http:
+        path: graphql
+        method: get        
